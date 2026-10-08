@@ -4,14 +4,11 @@ import { ArrowDown, ArrowUpRight } from 'lucide-react';
 
 const Hero: React.FC = () => {
   const containerRef = useRef(null);
-  const { scrollY } = useScroll();
-  const y = useTransform(scrollY, [0, 1000], [0, 200]);
-  const opacity = useTransform(scrollY, [0, 500], [1, 0]);
 
   return (
     <section 
       ref={containerRef}
-      className="relative min-h-screen pt-32 pb-20 px-6 md:px-12 flex flex-col justify-center overflow-hidden"
+      className="relative min-h-screen pt-32 pb-20 px-6 md:px-12 flex flex-col lg:justify-center overflow-x-hidden"
     >
       <div className="container mx-auto max-w-7xl">
         <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-8">
@@ -114,7 +111,6 @@ const Hero: React.FC = () => {
 
           {/* Right Side Image */}
           <motion.div 
-            style={{ y, opacity }}
             className="w-full lg:w-[35%] relative mt-12 lg:mt-0"
           >
             <motion.div

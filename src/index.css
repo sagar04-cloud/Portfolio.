@@ -8,6 +8,7 @@
 @layer base {
   body {
     @apply bg-background text-foreground font-sans antialiased;
+    overflow-x: hidden;
   }
 
   h1,
@@ -36,6 +37,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 100px;
 }
 
 /* Custom hide scrollbar */

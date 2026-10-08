@@ -16,7 +16,7 @@ import PageIntro from './components/PageIntro';
 
 function App() {
   return (
-    <div className="relative min-h-screen bg-background text-foreground overflow-x-hidden">
+    <div className="relative min-h-screen bg-background text-foreground">
       <CustomCursor />
       <PageIntro />
       <Navbar />

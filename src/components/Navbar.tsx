@@ -22,6 +22,33 @@ const Navbar: React.FC = () => {
     { name: 'CONTACT', href: '#contact' },
   ];
 
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    setMobileMenuOpen(false);
+
+    setTimeout(() => {
+      if (href === '#') {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        return;
+      }
+
+      const targetId = href.replace('#', '');
+      const targetElement = document.getElementById(targetId);
+      
+      if (targetElement) {
+        // Fallback to scrollIntoView if needed, but manual offset is safer for fixed headers
+        const headerOffset = 100;
+        const elementPosition = targetElement.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+    }, 10);
+  };
+
   return (
     <motion.header
       initial={{ opacity: 0, y: -20 }}
@@ -33,7 +60,7 @@ const Navbar: React.FC = () => {
         }`}
     >
       <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
-        <a href="#" className="text-xl font-bold tracking-tighter">
+        <a href="#" onClick={(e) => handleNavClick(e, '#')} className="text-xl font-bold tracking-tighter">
           SAGAR
         </a>
 
@@ -43,6 +70,7 @@ const Navbar: React.FC = () => {
             <a
               key={link.name}
               href={link.href}
+              onClick={(e) => handleNavClick(e, link.href)}
               className="text-sm font-medium text-secondary hover:text-foreground relative group transition-colors"
             >
               {link.name}
@@ -74,7 +102,7 @@ const Navbar: React.FC = () => {
                 <a
                   key={link.name}
                   href={link.href}
-                  onClick={() => setMobileMenuOpen(false)}
+                  onClick={(e) => handleNavClick(e, link.href)}
                   className="text-lg font-medium text-foreground py-2 border-b border-border/50"
                 >
                   {link.name}
