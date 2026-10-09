@@ -113,7 +113,7 @@ const Contact: React.FC = () => {
               }}
               className="relative z-10 w-full max-w-sm bg-white/40 backdrop-blur-xl border border-white/60 rounded-3xl p-8 shadow-[0_8px_32px_0_rgba(31,38,135,0.07)]"
             >
-              <div className="w-16 h-16 bg-accent text-white rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-accent/30">
+              <div className="w-16 h-16 bg-accent text-white rounded-full flex items-center justify-center mb-6 shadow-lg shadow-accent/30">
                 <MessageSquare size={32} />
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-2">Available for Work</h3>
