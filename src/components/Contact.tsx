@@ -56,9 +56,7 @@ const Contact: React.FC = () => {
               className="flex flex-col sm:flex-row items-start sm:items-center gap-4"
             >
               <a 
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=sagaru.works@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="mailto:sagaru.works@gmail.com"
                 className="group flex items-center justify-center gap-2 bg-foreground text-white px-8 py-4 rounded-full font-bold transition-all hover:scale-105 hover:shadow-2xl hover:shadow-foreground/20 w-full sm:w-auto"
               >
                 <Mail size={20} />
