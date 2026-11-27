@@ -93,6 +93,15 @@ const Contact: React.FC = () => {
                 >
                   <span className="">GitHub</span>
                 </a>
+                <a 
+                  href="/Sagar_U_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 flex justify-center items-center gap-2 px-6 py-4 rounded-full border border-border font-bold hover:border-accent hover:bg-accent hover:text-white transition-all group"
+                  title="Resume"
+                >
+                  <span>Resume</span>
+                </a>
               </div>
             </motion.div>
           </div>

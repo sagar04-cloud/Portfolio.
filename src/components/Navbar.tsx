@@ -77,6 +77,14 @@ const Navbar: React.FC = () => {
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-all group-hover:w-full"></span>
             </a>
           ))}
+          <a
+            href="/Sagar_U_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm font-semibold px-4 py-2 rounded-full bg-foreground text-white hover:bg-accent transition-colors"
+          >
+            RESUME
+          </a>
         </nav>
 
         {/* Mobile Toggle */}
@@ -108,6 +116,15 @@ const Navbar: React.FC = () => {
                   {link.name}
                 </a>
               ))}
+              <a
+                href="/Sagar_U_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setMobileMenuOpen(false)}
+                className="text-lg font-semibold text-accent py-2"
+              >
+                RESUME
+              </a>
             </div>
           </motion.div>
         )}

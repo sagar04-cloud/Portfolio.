@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowDown, ArrowUpRight } from 'lucide-react';
+import { ArrowDown, ArrowUpRight, FileText } from 'lucide-react';
 
 const Hero: React.FC = () => {
   const containerRef = useRef(null);
@@ -95,6 +95,15 @@ const Hero: React.FC = () => {
               >
                 LET'S CONNECT
                 <ArrowUpRight size={18} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+              </a>
+              <a 
+                href="/Sagar_U_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center gap-2 border border-border px-8 py-4 rounded-full font-medium hover:border-accent hover:text-accent transition-all hover:scale-105"
+              >
+                <FileText size={18} />
+                RESUME
               </a>
             </motion.div>
 
