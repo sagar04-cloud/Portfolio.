@@ -13,15 +13,31 @@
     <meta property="og:title" content="TalentPath Solutions — Case Study by Sagar U" />
     <meta property="og:description" content="Full-featured educational consulting and admissions platform hosted at talentpathsolutions.org." />
     <meta property="og:image" content="https://sagarr-2005.vercel.app/talentpath-solutions.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="TalentPath Solutions — Case Study by Sagar U" />
+    <meta name="twitter:description" content="Full-featured educational consulting and admissions platform hosted at talentpathsolutions.org." />
+    <meta name="twitter:image" content="https://sagarr-2005.vercel.app/talentpath-solutions.jpg" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "TalentPath Solutions",
-        "applicationCategory": "EducationalApplication",
-        "operatingSystem": "Web",
-        "url": "https://talentpathsolutions.org",
-        "author": { "@type": "Person", "name": "Sagar U" }
+        "@graph": [
+          {
+            "@type": "SoftwareApplication",
+            "name": "TalentPath Solutions",
+            "applicationCategory": "EducationalApplication",
+            "operatingSystem": "Web",
+            "url": "https://talentpathsolutions.org",
+            "author": { "@type": "Person", "name": "Sagar U" }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sagarr-2005.vercel.app/" },
+              { "@type": "ListItem", "position": 2, "name": "Projects", "item": "https://sagarr-2005.vercel.app/projects" },
+              { "@type": "ListItem", "position": 3, "name": "TalentPath Solutions", "item": "https://sagarr-2005.vercel.app/projects/talentpath-solutions" }
+            ]
+          }
+        ]
       }
     </script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
@@ -65,6 +81,15 @@
         </div>
         <a class="btn" href="https://talentpathsolutions.org" target="_blank" rel="noopener noreferrer">Visit Live Site</a>
         <a href="https://github.com/sagar04-cloud/TALENTPATHSOLUTION" target="_blank" rel="noopener noreferrer">View Source on GitHub →</a>
+        <section style="margin-top:56px;padding-top:24px;border-top:1px solid #E0E0E0;">
+          <p style="font-size:13px;color:#454759;margin:0 0 8px;">More Projects by Sagar U</p>
+          <div style="display:flex;flex-wrap:wrap;gap:16px;font-size:14px;">
+            <a href="/projects/ai-interviewer">AI Interviewer</a>
+            <a href="/projects/skillbridge-ai">SkillBridge AI</a>
+            <a href="/projects/smart-campus-ai">Smart Campus AI Assistant</a>
+            <a href="/services">Services</a>
+          </div>
+        </section>
       </main>
     </div>
   </body>

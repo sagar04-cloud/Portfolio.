@@ -14,26 +14,41 @@
     <meta property="og:title" content="AI &amp; Full-Stack Development Services — Sagar U" />
     <meta property="og:description" content="Full-Stack Engineering, AI &amp; GenAI Solutions, and DevOps &amp; Cloud Deployment from concept to production." />
     <meta property="og:image" content="https://sagarr-2005.vercel.app/hero-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="AI &amp; Full-Stack Development Services — Sagar U" />
+    <meta name="twitter:description" content="Full-Stack Engineering, AI &amp; GenAI Solutions, and DevOps &amp; Cloud Deployment from concept to production." />
+    <meta name="twitter:image" content="https://sagarr-2005.vercel.app/hero-image.png" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Service",
-        "serviceType": "AI & Full-Stack Web Development",
-        "provider": {
-          "@type": "Person",
-          "name": "Sagar U",
-          "url": "https://sagarr-2005.vercel.app/"
-        },
-        "areaServed": "Worldwide",
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Engineering Services",
-          "itemListElement": [
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Full-Stack Engineering (React, TypeScript, Next.js)" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI & GenAI Solutions (Gemini API, RAG, LangChain)" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "DevOps & Cloud Deployment (AWS, Docker, CI/CD)" } }
-          ]
-        }
+        "@graph": [
+          {
+            "@type": "Service",
+            "serviceType": "AI & Full-Stack Web Development",
+            "provider": {
+              "@type": "Person",
+              "name": "Sagar U",
+              "url": "https://sagarr-2005.vercel.app/"
+            },
+            "areaServed": "Worldwide",
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Engineering Services",
+              "itemListElement": [
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Full-Stack Engineering (React, TypeScript, Next.js)" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI & GenAI Solutions (Gemini API, RAG, LangChain)" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "DevOps & Cloud Deployment (AWS, Docker, CI/CD)" } }
+              ]
+            }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sagarr-2005.vercel.app/" },
+              { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://sagarr-2005.vercel.app/services" }
+            ]
+          }
+        ]
       }
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
